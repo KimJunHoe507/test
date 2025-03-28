@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>form과관연된태그요소들</title>
+    <style>
+        li{
+            list-style: none;
+            margin-bottom: 25px;
+        }
+    </style>
+</head>
+<body>
+    <form action="">
+        <fieldset>
+            <legend>개인정보폼</legend>
+            <ul>
+                <li>
+                    <!-- radio(버튼) -->
+                    <!-- name(첫자 영문, 같은이름으로 하여 1개만 선택되도록) -->
+                    <!-- checked(기본값으로 선택되도록) -->
+                    <!-- input id + label for (접근성 코딩으로 글자를 눌러도 체크가 되도록) -->
+                    <input type="radio" name="gender" id="men" checked>
+                    <label for="men">남</label>
+                    <input type="radio" name="gender" id="woman">
+                    <label for="woman">여</label>
+                </li>
+                <li>
+                    <!-- 체크박스는 여러개 선택 가능, name 쓸 필요 없음-->
+                    <label for="tour">여행</label>
+                    <input type="checkbox" name="" id="tour" checked>
+                    <label for="movie">영화</label>
+                    <input type="checkbox" name="" id="movie">
+                    <label for="book">독서</label>
+                    <input type="checkbox" name="" id="book">
+                </li>
+                <li>
+                    <label for="color">칼라선택</label>
+                    <!-- 콤보박스 만들기 -->
+                    <!-- value값은 백엔드가 -->
+                    <select name="" id="color">
+                        <option value="">:::::색상을 선택하세요:::::</option>
+                        <option value="">빨간색</option>
+                        <option value="">녹색</option>
+                        <option value="">파란색</option>
+                    </select>
+                </li>
+                <li>
+                    <label for="">칼라다중선택</label>
+                    <!-- multiple추가하면 다중선택 -->
+                    <select name="" id="color" multiple>
+                        <option value="">:::::색상을 선택하세요:::::</option>
+                        <option value="">빨간색</option>
+                        <option value="">녹색</option>
+                        <option value="">파란색</option>
+                    </select>
+                </li>
+            </ul>
+        </fieldset>
+    </form>
+</body>
+</html>
