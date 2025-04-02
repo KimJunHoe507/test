@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>상품 주문서</title>
+    <style>
+        body{
+            border: 5px solid #ffbfc9;
+            padding: 20px;
+            width: 820px;
+        }
+        fieldset{
+            border: 1px solid #d4a95b;
+            width: 780px;
+        }
+        textarea{
+            width: 340px;
+            height: 36px;
+        }
+        .p1{
+            background: #eeeeee;
+            padding: 10px;
+        }
+        ul{
+            list-style: none;
+        }
+        legend{
+            color: #b18c57;
+        }
+        .input1{
+            width: 177px;
+            height: 22px;
+        }
+        .tel1{
+            width: 37px;
+            height: 17px;
+        }
+        </style>
+</head>
+<body>
+    <h1>상품 주문서</h1>
+    <form action="">
+        <fieldset>
+            <legend>개인 정보</legend>
+            <p class="p1">
+                <label for="name">이름</label>
+                <input type="text" name="" id="name" placeholder="여백없이 입력" required class="input1" autofocus>
+            </p>
+            <p class="p1">
+                <label for="pw">비밀번호</label>
+                <input type="password" name="" id="pw" placeholder="비밀번호를 입력하시오" required class="input1">
+            </p>
+        </fieldset>
+    </form>
+    <form action="">
+        <fieldset>
+            <legend>배송지 정보</legend>
+            <p class="p1">
+                <label for="juso">주소</label>
+                <input type="text" name="" id="juso" class="input1" required>
+            </p>
+            <p class="p1">
+                <label for="tel">전화번호</label>
+                <select name="" id="tel">
+                    <option value="">010</option>
+                    <option value="">011</option>
+                    <option value="">012</option>
+                </select>
+                <input type="tel" name="" id="" maxlength="4" class="input1" required>
+                <input type="tel" name="" id="" maxlength="4" class="input1" required>
+            </p>
+            <p class="p1">
+                <label for="memo">메모</label>
+                <textarea name="" id="memo" cols="30" rows="10" placeholder="여기에 메모를 입력하세요"></textarea>
+            </p>
+        </fieldset>
+    </form>
+    <form action="">
+        <fieldset>
+            <legend>주문 정보</legend>
+            <p class="p1">
+                <label for="item1">과태말라 안티구아 (100g)</label>
+                <input type="number" name="" id="item1" class="input1">
+                <label for="">개</label>
+            </p>
+            <p class="p1">
+                <label for="item2">인도네시아 만델링 (100g)</label>
+                <input type="number" name="" id="item2" class="input1">
+                <label for="">개</label>
+            </p>
+            <p class="p1">
+                <label for="item3">탐라는도다 (블렌딩) (100g)</label>
+                <input type="number" name="" id="item3" class="input1">
+                <label for="">개</label>
+            </p class="p1">
+            <p class="p1">
+                <label for="one">01</label>
+                <input type="checkbox" name="" id="one" checked>
+                <label for="two">02</label>
+                <input type="checkbox" name="" id="two">
+                <label for="three">03</label>
+                <input type="checkbox" name="" id="three">
+                <label for="four">04</label>
+                <input type="checkbox" name="" id="four">
+            </p>
+            <p class="p1">
+                <label for="r1">r01</label>
+                <input type="radio" name="rr" id="r1" checked>
+                <label for="r2">r02</label>
+                <input type="radio" name="rr" id="r2">
+                <label for="r3">r03</label>
+                <input type="radio" name="rr" id="r3">
+                <label for="r4">r04</label>
+                <input type="radio" name="rr" id="r4">
+            </p>
+        </fieldset>
+    </form>
+    <form action="">
+        <fieldset>
+            <legend>버튼 모음</legend>
+            <p>
+                <input type="submit" value="주문하기">
+                <input type="reset" value="취소">
+            </p>
+        </fieldset>
+    </form>
+</body>
+</html>
